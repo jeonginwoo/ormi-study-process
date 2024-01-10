@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex test</title>
+    <style>
+        .wrap, .left_side, .center, .right_side {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .wrap {
+            margin: 10px;
+            height: 420px;
+            width: 420px;
+            background-color: lightgrey;
+        }
+
+        .wrap2 {
+            flex-direction: row-reverse;
+        }
+
+        .left_side, .center {
+            flex-direction: column;
+        }
+
+        .right_side {
+            flex-direction: column-reverse;
+        }
+
+        .right_side2 {
+            justify-content: center;
+        }
+
+        .blue, .yellow, .red {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*text-align: center;*/
+            /*line-height: 60px;*/
+        }
+
+        .blue {
+            background-color: cornflowerblue;
+        }
+
+        .red {
+            background-color: palevioletred;
+        }
+
+        .yellow {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+<article class="wrap">
+    <div class="left_side">
+        <div class="blue">A</div>
+        <div class="red">B</div>
+        <div class="yellow">C</div>
+    </div>
+    <div class="center">
+        <div class="blue">D</div>
+        <div class="yellow">E</div>
+    </div>
+    <div class="right_side">
+        <div class="blue">F</div>
+        <div class="red">G</div>
+        <div class="yellow">H</div>
+    </div>
+</article>
+</body>
+</html>

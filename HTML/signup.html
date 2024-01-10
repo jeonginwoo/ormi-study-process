@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>회원가입</title>
+</head>
+<body>
+<h1>회원가입</h1>
+<p>원활한 서비스 이용을 위해 회원가입을 해주세요</p>
+
+<form action="" method="post">
+    <label>아이디 <input type="text" required><br/></label>
+    <label>이메일 <input type="email" required><br/></label>
+    <label>비밀번호 <input type="password" required><br/></label>
+    <label>닉네임 <input type="text" required></label>
+
+    <fieldset>
+        <legend>성별</legend>
+        <ul>
+            <li><label for="man">
+                <input type="radio" name="gender" value="남성" id="man" required>남성
+            </label></li>
+            <li><label for="woman">
+                <input type="radio" name="gender" value="여성" id="woman">여성
+            </label></li>
+            <li><label for="non">
+                <input type="radio" name="gender" value="선택 안함" id="non">선택 안함
+            </label></li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>사용 기술</legend>
+        <ul>
+            <li><label for="HTML">
+                <input type="checkbox" name="technique" id="HTML" value="HTML">HTML
+            </label></li>
+            <li><label for="CSS">
+                <input type="checkbox" name="technique" id="CSS" value="CSS">CSS
+            </label></li>
+            <li><label for="JavaScript">
+                <input type="checkbox" name="technique" id="JavaScript" value="JavaScript">JavaScript
+            </label></li>
+            <li><label for="Python">
+                <input type="checkbox" name="technique" id="Python" value="Python">Python
+            </label></li>
+            <li><label for="Django">
+                <input type="checkbox" name="technique" id="Django" value="Django">Django
+            </label></li>
+            <li><label for="GitHub">
+                <input type="checkbox" name="technique" id="GitHub" value="GitHub">GitHub
+            </label></li>
+            <li><label for="PostgreSQL">
+                <input type="checkbox" name="technique" id="PostgreSQL" value="PostgreSQL">PostgreSQL
+            </label></li>
+        </ul>
+    </fieldset>
+    <button>회원가입</button>
+</form>
+</body>
+</html>

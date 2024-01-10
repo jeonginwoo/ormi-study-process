@@ -1,0 +1,56 @@
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* 수직 정렬에 flex 안써주는게 좋다고 한다. (이미 수직으로 되어있는 형태이기 때문에) */
+    /* space-between을 써주고싶어서 flex 속성을 넣어줬는데 안쓴다면 마진값을 이용해야되나? */
+    /* 각 요소에 vertical-align: 속성을 사용 */
+
+    box-sizing: border-box;
+    width: 350px;
+    height: 140px;
+    border: 1px solid #DBDBDB;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 18px 15px;
+}
+
+
+/* IR 기법
+.txt-hide {
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: 0px;
+    overflow: hidden;
+}
+* 제목을 화면에서 안보이게 해주지만 브라우저가 인식할 수 있도록 함.
+* 회사마다 방법 다름
+* 'display: none;'을 사용하면 브라우저가 인식하지 못함
+*/
+
+.login-button {
+    height: 40px;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    background-color: #711BFF;
+}
+
+.login-other {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+a, a:visited {
+    color: #767676;
+    text-decoration-line: none;
+}
+
+img {
+    vertical-align: top;
+}
